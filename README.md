@@ -2,7 +2,7 @@
 
 Task: show which products are frequently bought together.
 
-###### Importing the required libraries.
+## Importing the required libraries.
 
 ```py
 #import libraries
