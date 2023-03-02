@@ -16,18 +16,18 @@ store=pd.read_csv('~/MarketBasketAnalysis/GroceryStoreDataSet.csv',names=['produ
 print(store.shape) 
 ```
 
-<p font-size: 16px;>(50,1)</p>
+<p>(50,1)</p>
 
 ```py
 #Statistical description of the dataset.
 print(store.describe())
 ```
-<table font-size: 10px;>
+<table>
 <tr>
-    <td>product count</td>
-    <td>unique</td>
-    <td>top</td>
-    <td>freq</td>
+    <th>product count</th>
+    <th>unique</th>
+    <th>top</th>
+    <th>freq</th>
 </tr>
 <tr>
     <td>50</td>
@@ -37,3 +37,24 @@ print(store.describe())
 </tr>
 </table>
  
+
+```py 
+#show the first few rows
+print(store.head())
+```
+
+<table>
+<tr>
+    <td>MILK,BREAD,BISCUIT</td>
+</tr>
+<tr>
+    <td>PIZZA</td>
+</tr>
+<tr>
+    <td>PIZZA,WATER,BEER</td>
+</tr>
+<tr>
+    <td>WATER,AVOCADO,BREAD</td>
+</tr>
+...
+</table>
