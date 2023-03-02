@@ -1,5 +1,13 @@
 # MarketBasketAnalysis
 
+<style>
+      html * {
+        font-size: 16px;
+        line-height: 1.625;
+        color: #2020131;
+        font-family: Nunito, sans-serif;
+      }
+      
 Task: show which products are frequently bought together.
 
 ```py
