@@ -60,14 +60,41 @@ print(store.head())
 
 <table>
 <tr>
+    <th></th>
     <th>product</th>
 <tr>
+    <td>0</td>
     <td>MILK,BREAD,BISCUIT</td>
 </tr>
 <tr>
+    <td>1</td>
     <td>PIZZA</td>
 </tr>
 <tr>
+    <td>2</td>
     <td>PIZZA,WATER,BEER</td>
+</tr>
+</table>
+
+```py 
+#checking random entries in the dataset
+print(store.random(3))
+```
+
+<table>
+<tr>
+    <th></th>
+    <th>product</th>
+<tr>
+    <td>8</td>
+    <td>SALT,JUICE,COFFEE</td>
+</tr>
+<tr>
+    <td>45</td>
+    <td>BREAD,SUGAR,BOURNVITA</td>
+</tr>
+<tr>
+    <td>15</td>
+    <td>SHRIMP,EGGS,AVOCADO,BREAD</td>
 </tr>
 </table>
