@@ -2,18 +2,26 @@
 
 Task: show which products are frequently bought together.
 
-## Importing the required libraries.
+## Importing the required libraries
 
 ```py
-#import libraries
+#for basic operations
 import numpy as np
 import pandas as pd
 
-#read the data
-store=pd.read_csv('~/MarketBasketAnalysis/GroceryStoreDataSet.csv',names=['product'],header=None)
+# for visualizations
+import matplotlib.pyplot as plt
+
+# for market basket analysis
+from mlxtend.frequent_patterns import apriori, association_rules, fpgrowth, fpmax, fpcommon 
 ```
 
+## Importing the dataset
+
 ```py
+#read the data
+store=pd.read_csv('~/MarketBasketAnalysis/GroceryStoreDataSet.csv',names=['product'],header=None)
+
 #check data set
 print(store.shape) 
 ```
