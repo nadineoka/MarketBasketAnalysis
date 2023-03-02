@@ -17,6 +17,7 @@ print(store.shape)
 ```
 
 <p>(50,1)</p>
+<i> 50 rows, 1 column</i>
 
 ```py
 #Statistical description of the dataset.
@@ -25,14 +26,18 @@ print(store.describe())
 <table>
 <tr>
     <th>product count</th>
-    <th>unique</th>
-    <th>top</th>
-    <th>freq</th>
+    <td>50</td>
 </tr>
 <tr>
-    <td>50</td>
-    <td>47</td>           
+    <th>unique</th>
+    <td>47</td>
+</tr>
+<tr>
+    <th>top</th>
     <td>BREAD,COFFEE,SUGAR</td>
+</tr>
+<tr>
+    <th>freq</th>
     <td>2</td>
 </tr>
 </table>
@@ -56,5 +61,6 @@ print(store.head())
 <tr>
     <td>WATER,AVOCADO,BREAD</td>
 </tr>
-...
+
 </table>
+...
