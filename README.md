@@ -16,12 +16,12 @@ store=pd.read_csv('~/MarketBasketAnalysis/GroceryStoreDataSet.csv',names=['produ
 print(store.shape) 
 ```
 
-<p>(50,1)</p>
 <i> 50 rows, 1 column</i>
 
 ```py
 #Statistical description of the dataset.
 print(store.describe())
+
 ```
 <table>
 <tr>
