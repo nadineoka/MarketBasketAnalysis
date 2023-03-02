@@ -2,7 +2,7 @@
 
 Task: show which products are frequently bought together.
 
-```
+```py
 #import libraries
 import numpy as np
 import pandas as pd
@@ -11,14 +11,14 @@ import pandas as pd
 store=pd.read_csv('~/MarketBasketAnalysis/GroceryStoreDataSet.csv',names=['product'],header=None)
 ```
 
-```
-check data set
+```py
+#check data set
 print(store.shape) 
 ```
 
 (50,1)
 
-```
+```py
 #Statistical description of the dataset.
 print(store.describe())
 ```
