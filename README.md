@@ -12,9 +12,9 @@ store=pd.read_csv('~/MarketBasketAnalysis/GroceryStoreDataSet.csv',names=['produ
 #check data set
 print(store.shape) 
 
-'''
+```
 (50,1)
-'''
+```
 
 #Statistical description of the dataset.
 print(store.describe())
