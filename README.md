@@ -60,6 +60,8 @@ print(store.head())
 
 <table>
 <tr>
+    <th>product</th>
+<tr>
     <td>MILK,BREAD,BISCUIT</td>
 </tr>
 <tr>
@@ -68,9 +70,4 @@ print(store.head())
 <tr>
     <td>PIZZA,WATER,BEER</td>
 </tr>
-<tr>
-    <td>WATER,AVOCADO,BREAD</td>
-</tr>
-
 </table>
-...
