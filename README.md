@@ -11,10 +11,10 @@ Once the item sets with sufficient support have been identified, the algorithm g
 #### The Apriori algorithm can be used to:
 
 <ul>
-  <li>1. Identify frequent item sets in a transaction database.</li>
-  <li>2. Determine the association rules between items, including which items tend to be purchased together and which items tend to be purchased separately.</li>
-  <li>3. Determine the minimum support and minimum confidence levels needed for the association rules to be considered significant.</li>
-  <li>4. Identify which items should be placed near each other in a store or online store to encourage customers to purchase related items.</li>
+  <li>Identify frequent item sets in a transaction database.</li>
+  <li>Determine the association rules between items, including which items tend to be purchased together and which items tend to be purchased separately.</li>
+  <li>Determine the minimum support and minimum confidence levels needed for the association rules to be considered significant.</li>
+  <li>Identify which items should be placed near each other in a store or online store to encourage customers to purchase related items.</li>
 </ul>
 
 #### Calculations
@@ -285,7 +285,7 @@ store_ap = pd.DataFrame(store_ap,columns=te.columns_)
 ```
 
 ```py 
-print(store.head)
+print(store.head())
 ```
 <table>
 <tr>
@@ -330,7 +330,7 @@ print(store_ap.shape)
  
 #### Create some rules
 
-The algorithm employs level-wise search for frequent itemsets. A list of all possible itemsets is generated with having a support value greater than min_supoort value = 0.07
+The algorithm employs level-wise search for frequent itemsets. A list of all possible itemsets is generated with having a support value greater than min_support value = 0.07
 
 ```py
 frequent_itemsets = apriori(store_ap, min_support=0.07, use_colnames=True) #support higher (relative frequency that the rules show up)
@@ -515,20 +515,23 @@ print(rules2.loc[(rules2['lift']>=2) & (rules2['confidence']>= 0.6)] )
 
 1.Support vs Confidence
 
+```py 
 plt.scatter(rules2['support'], rules2['confidence'], alpha=0.5)
 plt.xlabel('support')
 plt.ylabel('confidence')
 plt.title('Support vs Confidence')
 plt.show()
+```
 
 2. Support vs Lift
 
+```py 
 plt.scatter(rules2['support'], rules2['lift'], alpha=0.5)
 plt.xlabel('support')
 plt.ylabel('lift')
 plt.title('Support vs Lift')
 plt.show()
-
+```
 
 
 
